@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La Petite Pâtisserie: tortas personalizadas, pastelería artesanal y dulces para celebrar.">
+  <title>La Petite Pâtisserie | Pastelería de autor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Italianno&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">♡ HECHO CON AMOR PARA TUS MOMENTOS MÁS DULCES ♡</div>
+  <header class="header">
+    <a class="brand" href="#inicio"><span class="brand-small">MAISON DE DOUCEURS</span><span class="brand-name">La Petite</span><span class="brand-bottom">PÂTISSERIE ✦</span></a>
+    <nav aria-label="Menú principal"><a href="#inicio">Inicio</a><a href="#productos">Productos</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></nav>
+    <a class="header-cta" href="#productos">Ver delicias ↗</a>
+  </header>
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-copy"><div class="eyebrow">PASTELERÍA ARTESANAL · BONJOUR!</div><h1 id="titulo-principal">Un poquito de <em>dulzura</em> para cada ocasión.</h1><p>Delicias hechas con dedicación, sabores que enamoran y detalles que convierten cualquier momento en un recuerdo especial.</p><a class="btn primary" href="#productos">Descubrí nuestros productos <span>↗</span></a><div class="hero-note">✳ Tortas únicas &nbsp; ✳ Momentos inolvidables</div></div>
+      <div class="hero-visual"><img src="imagenes/mini-torta-frambuesas.jpg" alt="Mini torta rosa con crema y frambuesas" fetchpriority="high"><span class="photo-label">UN DULCE MOMENTO ♡</span></div>
+    </section>
+    <div class="ribbon">✦ &nbsp; HECHO A MANO &nbsp; ✦ &nbsp; CON MUCHO AMOR &nbsp; ✦ &nbsp; PARA COMPARTIR &nbsp; ✦ &nbsp; HECHO A MANO &nbsp; ✦</div>
+    <section id="productos" class="section products"><div class="section-top"><div><span class="eyebrow">NUESTRAS ESPECIALIDADES</span><h2>Pequeños placeres, <em>grandes sonrisas.</em></h2></div><p>Conocé algunas de nuestras propuestas para endulzar tus días.</p></div>
+      <div class="gallery">
+        <article class="item-card"><img src="imagenes/torta-celebracion.jpg" alt="Torta de celebración" loading="lazy"><div class="card-body"><span>TORTAS DE AUTOR</span><h3>Tortas para celebrar</h3><p>Diseños delicados para cumpleaños y ocasiones especiales.</p><button class="product-button" data-product="Tortas personalizadas">Me interesa ↗</button></div></article>
+        <article class="item-card"><img src="imagenes/tarta-chocolate.jpg" alt="Tarta de chocolate" loading="lazy"><div class="card-body"><span>CLÁSICOS</span><h3>Tartas artesanales</h3><p>Sabores clásicos con un toque especial.</p><button class="product-button" data-product="Postres y tartas">Me interesa ↗</button></div></article>
+        <article class="item-card"><img src="imagenes/macarons.jpg" alt="Macarons de colores" loading="lazy"><div class="card-body"><span>PETITES DOUCEURS</span><h3>Macarons</h3><p>Pequeños bocados de colores para regalar o compartir.</p><button class="product-button" data-product="Macarons">Me interesa ↗</button></div></article>
+        <article class="item-card"><img src="imagenes/cupcakes.jpg" alt="Cupcakes con crema" loading="lazy"><div class="card-body"><span>PEQUEÑAS DELICIAS</span><h3>Cupcakes</h3><p>Suaves, delicados y llenos de dulzura.</p><button class="product-button" data-product="Cupcakes">Me interesa ↗</button></div></article>
+      </div>
+    </section>
+    <section id="nosotros" class="about"><div class="about-photo"><img src="imagenes/torta-celebracion.jpg" alt="Torta artesanal decorada con flores y velas" loading="lazy"></div><div class="about-copy"><span class="eyebrow">UN POCO SOBRE NOSOTROS</span><h2>La magia está en <em>los detalles.</em></h2><p>En La Petite Pâtisserie creemos que la pastelería es mucho más que algo rico. Es una forma de acompañar cumpleaños, reuniones, regalos y momentos que merecen ser recordados.</p><p>Nos inspiran las recetas artesanales, las presentaciones delicadas y el amor por las cosas bien hechas.</p><a class="btn outline" href="#contacto">Conocé más ♡</a></div></section>
+    <section class="special"><span class="eyebrow">PARA CADA CELEBRACIÓN</span><h2>¿Tenés algo lindo <em>que festejar?</em></h2><p>Contanos qué imaginás y hagamos que tu día sea todavía más dulce.</p><a class="btn primary" href="#contacto">Hacé tu consulta ↗</a></section>
+    <section id="contacto" class="contact section"><span class="eyebrow">HABLEMOS DE COSAS DULCES</span><h2>Tu próximo momento especial <em>empieza acá.</em></h2><p>Elegí qué te gustaría pedir y dejá tu mensaje. Este formulario es una demostración para el proyecto escolar.</p><form id="contact-form"><label>Tu nombre<input name="nombre" required placeholder="¿Cómo te llamás?"></label><label>¿Qué te gustaría?<select name="producto" id="producto" required><option value="">Elegí una opción</option><option>Tortas personalizadas</option><option>Postres y tartas</option><option>Cookies artesanales</option><option>Cupcakes</option><option>Macarons</option><option>Otro pedido</option></select></label><label class="full">Tu mensaje<textarea name="mensaje" rows="4" required placeholder="Contanos un poquito sobre tu idea..."></textarea></label><button type="submit" class="btn primary">Enviar consulta ♡</button></form><p id="respuesta" role="status" aria-live="polite"></p></section>
+  </main>
+  <footer><div class="footer-logo">La Petite <span>PÂTISSERIE</span></div><p>Pequeños detalles, grandes momentos. ♡</p><p>Proyecto de Informática · Sitio de demostración</p><a href="#inicio">Volver arriba ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>

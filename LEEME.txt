@@ -1,0 +1,11 @@
+LA PETITE PÂTISSERIE — PROYECTO PARA VISUAL STUDIO CODE
+
+1. Descomprimí el ZIP.
+2. Abrí Visual Studio Code > Archivo > Abrir carpeta.
+3. Seleccioná la carpeta La-Petite-Patisserie.
+4. Abrí index.html con la extensión Live Server (clic derecho > Open with Live Server).
+5. Los archivos index.html, style.css y script.js están separados, como en las guías de Informática.
+6. Las 5 fotos originales que enviaste están en imagenes/ sin reducción de resolución ni recompresión.
+7. Para publicar: subí index.html, style.css, script.js y la carpeta imagenes a un repositorio público de GitHub; Settings > Pages > Deploy from a branch > main / (root) > Save.
+8. El formulario es demostrativo: no envía pedidos reales.
+9. Las tipografías de Google Fonts requieren conexión a Internet; hay fuentes alternativas configuradas.
